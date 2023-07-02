@@ -25,13 +25,23 @@ console.log('Basket is now:', basket);
 // end addItem
 
 
-function listItems(item, basket){
+function listItems(){
    // list items in basket array 
-    for (let i=0; i<basket.length; i++);
-    // initialize at item 0 and iterate through array
-        console.log('Show item in basket:', item[i]);
-        if()
+let i=0;
+// the index of the array items should start at 0
+    while (i<basket.length) {
+        console.log(basket[i]);
+        i++;
+        // iterate through the items in the array basket
     }
+}
+console.log(listItems());
+   // keeps coming up as undefined - what am i missing?
+
+
+function empty(){
+    
+}
 
 
 
