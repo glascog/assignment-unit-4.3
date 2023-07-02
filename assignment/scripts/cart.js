@@ -26,7 +26,7 @@ console.log('Basket is now:', basket);
 
 
 function listItems(){
-   // list items in basket array 
+//    list items in basket array 
 let i=0;
 // the index of the array items should start at 0
     while (i<basket.length) {
@@ -36,13 +36,19 @@ let i=0;
     }
 }
 console.log(listItems());
-   // keeps coming up as undefined - what am i missing?
+//    coming up as undefined - what am i missing?
 
+  console.log(basket);
+  // check array contents
+  // ['blueberries', 'yogurt', 'granola']
 
 function empty(){
-    
+    while(basket.length>0){
+        basket = [];    
+        return basket;
+    }
 }
-
+console.log('check basket:', empty());
 
 
 
