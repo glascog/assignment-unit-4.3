@@ -5,11 +5,12 @@ console.log('***** Cart Functions *****');
 let basket = [];
 
 function addItem(item){
-    basket.push(item);
-    if(basket.length > 0){
-        return true;
-    }
-}
+        basket.push(item);
+        if(basket.length > 0){
+            return true;
+        } 
+    }  
+
 // add item to basket
 console.log('Add blueberries (should be true):', addItem('blueberries'));
 // check item in basket
@@ -50,8 +51,16 @@ function empty(){
 }
 console.log('check basket:', empty());
 
+const maxItems = 5
 
-
+function isFull(){
+    if(basket.length<maxItems){
+        return false;
+    } else(basket.length>=maxItems)
+        return true;
+    
+}
+console.log('Basket is full?', isFull());
 
 
 
